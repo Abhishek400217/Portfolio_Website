@@ -129,25 +129,29 @@ document.querySelector('.home__scroll').addEventListener('click', function(e) {
 });
 /* ================= NAVBAR HIDE/SHOW ON SCROLL ================= */
 
-let lastScrollY = window.scrollY;
-const header = document.querySelector(".header");
+/* ===== PROFESSIONAL NAVBAR HIDE/SHOW ===== */
 
-window.addEventListener("scroll", () => {
+const header = document.querySelector("#header");
 
-    const currentScrollY = window.scrollY;
+let lastScroll = 0;
 
-    // scroll down → hide navbar
-    if (currentScrollY > lastScrollY && currentScrollY > 80) {
-        header.classList.add("hide");
+window.addEventListener("scroll", function () {
+
+    const currentScroll = window.pageYOffset;
+
+    // scrolling down
+    if (currentScroll > lastScroll && currentScroll > 80) {
+        header.style.transform = "translateY(-100%)";
     }
-    
-    // scroll up → show navbar
+    // scrolling up
     else {
-        header.classList.remove("hide");
+        header.style.transform = "translateY(0)";
     }
 
-    lastScrollY = currentScrollY;
+    lastScroll = currentScroll;
+
 });
+
 
 
 // Contact form validation (no backend)
