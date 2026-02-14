@@ -903,3 +903,98 @@ img {
         height: 340px;
     }
 }
+@media screen and (min-width: 1400px) {
+
+    .container {
+        max-width: 1300px;
+    }
+
+    .home__blob {
+        width: 380px;
+        height: 380px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .home__title {
+        font-size: 2.8rem;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+
+    .home {
+        height: auto;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .home__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home__img-box {
+        justify-content: center;
+        order: -1;
+    }
+
+    .home__blob {
+        width: 260px;
+        height: 260px;
+        margin: auto;
+    }
+
+    .projects__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        height: auto;
+    }
+
+    .home__title {
+        font-size: 2rem;
+    }
+
+    .home__blob {
+        width: 220px;
+        height: 220px;
+    }
+
+    .projects__container,
+    .contact__container,
+    .skills__container {
+        grid-template-columns: 1fr;
+    }
+
+}
+@media screen and (max-width: 480px) {
+
+    .home__title {
+        font-size: 1.6rem;
+    }
+
+    .home__blob {
+        width: 180px;
+        height: 180px;
+    }
+
+}
+
