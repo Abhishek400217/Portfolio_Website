@@ -952,48 +952,41 @@ img {
     }
 
 }
+/* MOBILE NAVBAR FIX */
 @media screen and (max-width: 768px) {
 
-    .home {
-        height: auto;
-        padding-top: 6rem;
-    }
-
-    .home__container {
-        display: flex;
+    .nav {
         flex-direction: column;
-        align-items: center;
+        height: auto;
+        padding: 0.75rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .nav__logo {
+        font-size: 1.2rem;
         text-align: center;
+        width: 100%;
     }
 
-    /* IMAGE FIRST */
-    .home__img-box {
-        order: -1;
+    .nav__list {
+        flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 20px;
+        gap: 1rem;
     }
 
-    .home__blob {
-        width: 200px;
-        height: 200px;
-    }
-
-    /* TEXT AFTER IMAGE */
-    .home__data {
-        order: 1;
-    }
-
-    .home__title {
-        font-size: 2rem;
-    }
-
-    .home__description {
-        font-size: 0.95rem;
-        padding: 0 10px;
-    }
-
-    .home__buttons {
+    .theme-switch {
+        margin-left: 0;
         justify-content: center;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .projects__img {
+        height: auto;
+        max-height: 220px;
+        object-fit: cover;
     }
 
 }
