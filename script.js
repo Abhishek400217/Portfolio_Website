@@ -1,13 +1,40 @@
-// Change background header on scroll
-function scrollHeader() {
+// Navbar hide on scroll down, show on scroll up
+(function initNavbarScroll() {
     const header = document.getElementById('header');
-    if (this.scrollY >= 50) {
-        header.classList.add('is-scrolled');
-    } else {
-        header.classList.remove('is-scrolled');
+    if (!header) return;
+
+    const SCROLL_THRESHOLD = 10;
+    const TOP_THRESHOLD = 80;
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    function updateNavbar() {
+        const scrollY = window.scrollY;
+
+        if (scrollY < TOP_THRESHOLD) {
+            header.classList.remove('header-hidden');
+            header.classList.remove('is-scrolled');
+        } else {
+            header.classList.add('is-scrolled');
+            if (scrollY > lastScrollY && scrollY - lastScrollY > SCROLL_THRESHOLD) {
+                header.classList.add('header-hidden');
+            } else if (lastScrollY > scrollY && lastScrollY - scrollY > SCROLL_THRESHOLD) {
+                header.classList.remove('header-hidden');
+            }
+        }
+        lastScrollY = scrollY;
+        ticking = false;
     }
-}
-window.addEventListener('scroll', scrollHeader);
+
+    function onScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(updateNavbar);
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+})();
 
 // Theme switcher (persisted)
 (function initTheme() {
@@ -131,24 +158,31 @@ document.querySelector('.home__scroll').addEventListener('click', function(e) {
 
 /* ===== PROFESSIONAL NAVBAR HIDE/SHOW ===== */
 
-const header = document.querySelector("#header");
+document.addEventListener("DOMContentLoaded", function () {
 
-let lastScroll = 0;
+    const header = document.getElementById("header");
 
-window.addEventListener("scroll", function () {
+    let lastScroll = 0;
 
-    const currentScroll = window.pageYOffset;
+    window.addEventListener("scroll", function () {
 
-    // scrolling down
-    if (currentScroll > lastScroll && currentScroll > 80) {
-        header.style.transform = "translateY(-100%)";
-    }
-    // scrolling up
-    else {
-        header.style.transform = "translateY(0)";
-    }
+        const currentScroll =
+            window.pageYOffset || document.documentElement.scrollTop;
 
-    lastScroll = currentScroll;
+        if (currentScroll > lastScroll && currentScroll > 100) {
+
+            header.style.transform = "translateY(-100%)";
+
+        }
+        else {
+
+            header.style.transform = "translateY(0)";
+
+        }
+
+        lastScroll = currentScroll;
+
+    });
 
 });
 
@@ -237,3 +271,4 @@ window.addEventListener("scroll", function () {
         });
     });
 })();
+
