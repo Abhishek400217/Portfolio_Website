@@ -127,6 +127,24 @@ document.querySelector('.home__scroll').addEventListener('click', function(e) {
         });
     }
 });
+// AUTO HIDE NAVBAR ON SCROLL
+
+let lastScrollY = window.scrollY;
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > lastScrollY) {
+        // scrolling DOWN → hide navbar
+        header.classList.add("hide");
+    } else {
+        // scrolling UP → show navbar
+        header.classList.remove("hide");
+    }
+
+    lastScrollY = window.scrollY;
+
+});
 
 // Contact form validation (no backend)
 (function initContactForm() {
