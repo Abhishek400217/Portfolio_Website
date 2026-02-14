@@ -127,24 +127,28 @@ document.querySelector('.home__scroll').addEventListener('click', function(e) {
         });
     }
 });
-// AUTO HIDE NAVBAR ON SCROLL
+/* ================= NAVBAR HIDE/SHOW ON SCROLL ================= */
 
 let lastScrollY = window.scrollY;
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
 
-    if (window.scrollY > lastScrollY) {
-        // scrolling DOWN → hide navbar
+    const currentScrollY = window.scrollY;
+
+    // scroll down → hide navbar
+    if (currentScrollY > lastScrollY && currentScrollY > 80) {
         header.classList.add("hide");
-    } else {
-        // scrolling UP → show navbar
+    }
+    
+    // scroll up → show navbar
+    else {
         header.classList.remove("hide");
     }
 
-    lastScrollY = window.scrollY;
-
+    lastScrollY = currentScrollY;
 });
+
 
 // Contact form validation (no backend)
 (function initContactForm() {
