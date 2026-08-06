@@ -18,7 +18,11 @@
 
 ## 📌 About the Project
 
-This is my personal portfolio website built to showcase my:
+## 📌 About the Project
+
+This portfolio website serves as my personal developer portfolio where I showcase my projects, technical skills, education, and contact information.
+
+The goal of this website is to provide recruiters and developers with a quick overview of my work and technical background in a clean and responsive interface.
 
 - 💻 Projects  
 - 🧠 Skills  
