@@ -96,6 +96,13 @@ git clone https://github.com/Abhishek400217/Portfolio_Website.git
 - GitHub: https://github.com/Abhishek400217
 - Portfolio: https://abhishek400217.github.io/Portfolio_Website/
 
+  ## 📬 Contact
+
+- 📧 Email: abhishekkarande17@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/abhishekkarande17/
+- 💻 GitHub: https://github.com/Abhishek400217
+- 🌐 Portfolio: https://abhishek400217.github.io/Portfolio_Website/
+
 ---
 
 ## ⭐ Support
