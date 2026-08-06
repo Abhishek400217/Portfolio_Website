@@ -68,6 +68,17 @@ Portfolio_Website/
 - Professional layout 💼
 
 ---
+## ✨ Highlights
+
+- Clean and responsive interface
+- Mobile-friendly design
+- Smooth scrolling navigation
+- Project showcase section
+- Download Resume button
+- Contact section
+- Optimized for GitHub Pages
+
+---
 
 ## 🧑‍💻 Author
 
