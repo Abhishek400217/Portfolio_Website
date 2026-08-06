@@ -79,6 +79,10 @@ Portfolio_Website/
 - Optimized for GitHub Pages
 
 ---
+## 💻 Run Locally
+
+Clone the repository
+git clone https://github.com/Abhishek400217/Portfolio_Website.git
 
 ## 🧑‍💻 Author
 
