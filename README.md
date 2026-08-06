@@ -18,8 +18,6 @@
 
 ## 📌 About the Project
 
-## 📌 About the Project
-
 This portfolio website serves as my personal developer portfolio where I showcase my projects, technical skills, education, and contact information.
 
 The goal of this website is to provide recruiters and developers with a quick overview of my work and technical background in a clean and responsive interface.
@@ -46,7 +44,14 @@ It represents my work as a **Full Stack Java Developer and Web Developer**.
 - GitHub
 
 ---
+## 🛠️ Tech Stack
 
+| Category | Technologies |
+|----------|--------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Version Control | Git, GitHub |
+| Editor | VS Code |
+| Deployment | GitHub Pages |
 ## 📂 Project Structure
 
 ```
