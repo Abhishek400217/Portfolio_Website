@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=github" />
   <img src="https://img.shields.io/badge/Made%20With-HTML-orange?style=for-the-badge&logo=html5" />
-  <img src="https://img.shields.io/badge/Styled%20With-CSS-blue?style=for-the-badge&logo=css3" />
+  <img src="https://img.shields.io/badge/Styled%20With-CSS-blue?style=for-the-badge&logo=css3" />.  
   <img src="https://img.shields.io/badge/Logic-JavaScript-yellow?style=for-the-badge&logo=javascript" />
 </p>
 
